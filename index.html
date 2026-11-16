@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Planejart Móveis Planejados | Palmares - PE</title>
+<meta name="description" content="Móveis planejados residenciais e comerciais em Palmares - PE. Fábrica própria, mais de 20 anos no mercado, cozinhas, closets, escritórios, lojas completas, balcões e expositores. 5 estrelas no Google.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta property="og:title" content="Planejart Móveis Planejados | Palmares - PE">
+<meta property="og:description" content="Fábrica própria, mais de 20 anos e acabamento de alto padrão. Móveis residenciais e comerciais sob medida.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Planejart Móveis Planejados">
+<meta property="og:url" content="https://planejart.vercel.app/">
+<meta property="og:image" content="https://planejart.vercel.app/assets/og-capa.jpg">
+<meta property="og:image:alt" content="Logo Planejart Móveis Projetados">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://planejart.vercel.app/assets/og-capa.jpg">
+<link rel="canonical" href="https://planejart.vercel.app/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FurnitureStore","name":"Planejart Móveis Planejados","description":"Móveis planejados residenciais e comerciais com fábrica própria em Palmares - PE.","telephone":"+55 81 98442-1539","email":"contato.planejartmoveis@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Av. Ministro Marcos Freire, 170 - Centro","addressLocality":"Palmares","addressRegion":"PE","postalCode":"55540-000","addressCountry":"BR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"14:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","bestRating":"5"},"founder":{"@type":"Person","name":"Guilherme Pedrosa"},"sameAs":["https://www.instagram.com/moveisplanejart/"]}
+</script>
+<style>
+:root{
+  --ink:#050505;
+  --dark:#0a0a0a;
+  --dark-2:#141414;
+  --dark-3:#1c1c1c;
+  --line-d:rgba(255,255,255,.09);
+  --gold:#c8a45a;          /* dourado do logo */
+  --gold-2:#e3cb94;
+  --bronze:#7d5f22;        /* dourado escurecido p/ texto em fundo claro (AA) */
+  --paper:#ffffff;
+  --paper-2:#f5f2ec;
+  --line-l:rgba(20,20,20,.12);
+  --t-light:#f5f1e8;
+  --t-light-2:#aaa59b;
+  --t-dark:#141414;
+  --t-dark-2:#56534d;
+  --r:16px;
+  --wrap:1200px;
+  --ease:cubic-bezier(.2,.75,.2,1);
+  --head:"Cormorant Garamond",Georgia,serif;
+  --body:"Manrope",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{background:var(--dark);color:var(--t-light);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+img{height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{width:min(var(--wrap),100% - 32px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:var(--t-dark);padding:8px 14px;border-radius:8px;z-index:200}
+.skip:focus{left:8px}
+.progress{position:fixed;inset:0 0 auto 0;height:2px;z-index:120;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+
+/* ===== header ===== */
+.hdr{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .4s var(--ease),box-shadow .4s,padding .4s;padding:22px 0}
+.hdr.solid{background:rgba(10,10,10,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line-d);padding:12px 0}
+.hdr .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px}
+.hdr .logo img{height:40px;width:auto}
+.nav{display:flex;gap:30px}
+.nav a{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--t-light-2);position:relative;padding:6px 0;transition:color .3s}
+.nav a::after{content:"";position:absolute;left:50%;right:50%;bottom:0;height:1px;background:var(--gold);transition:left .35s var(--ease),right .35s var(--ease)}
+.nav a:hover,.nav a.on{color:var(--t-light)}
+.nav a:hover::after,.nav a.on::after{left:0;right:0}
+.hdr .cta-s{justify-self:end}
+.burger{display:none;justify-self:end;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-d);position:relative}
+.burger span{position:absolute;left:13px;right:13px;height:1.5px;background:var(--t-light);transition:transform .35s var(--ease)}
+.burger span:nth-child(1){top:17px}.burger span:nth-child(2){top:25px}
+.menu-open .burger span:nth-child(1){transform:translateY(4px) rotate(45deg)}
+.menu-open .burger span:nth-child(2){transform:translateY(-4px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:90;background:var(--dark);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+.mnav a{font-family:var(--head);font-size:32px;font-weight:500;transform:translateY(16px);opacity:0;transition:transform .5s var(--ease),opacity .5s}
+.menu-open .mnav{opacity:1;visibility:visible}
+.menu-open .mnav a{transform:none;opacity:1}
+.menu-open .mnav a:nth-child(2){transition-delay:.05s}.menu-open .mnav a:nth-child(3){transition-delay:.1s}.menu-open .mnav a:nth-child(4){transition-delay:.15s}.menu-open .mnav a:nth-child(5){transition-delay:.2s}.menu-open .mnav a:nth-child(6){transition-delay:.25s}.menu-open .mnav a:nth-child(7){transition-delay:.3s}
+
+/* ===== botões ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 30px;border-radius:999px;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;border:1.5px solid var(--gold);transition:background .35s var(--ease),color .35s var(--ease),border-color .35s,transform .35s var(--ease)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-p{background:var(--gold);color:var(--t-dark)}
+.btn-p:hover{background:transparent;color:var(--gold)}
+.btn-g{background:transparent;color:var(--t-light);border-color:rgba(255,255,255,.28)}
+.btn-g:hover{background:var(--t-light);color:var(--t-dark);border-color:var(--t-light)}
+.light .btn-g{color:var(--t-dark);border-color:var(--t-dark)}
+.light .btn-g:hover{background:var(--t-dark);color:var(--paper)}
+.light .btn-p{background:var(--t-dark);border-color:var(--t-dark);color:var(--paper)}
+.light .btn-p:hover{background:transparent;color:var(--t-dark)}
+.btn:active{transform:scale(.97)}
+.cta-s.btn{min-height:42px;padding:0 22px;font-size:11px}
+
+/* ===== seções ===== */
+section{position:relative;padding:clamp(84px,11vw,144px) 0}
+.light{background:var(--paper);color:var(--t-dark)}
+.light.alt{background:var(--paper-2)}
+.dark{background:var(--dark)}
+.head{text-align:center;max-width:780px;margin:0 auto clamp(44px,6vw,72px)}
+.eyebrow{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.light .eyebrow{color:var(--bronze)}
+h1,h2,h3{font-family:var(--head);font-weight:500;line-height:1.04;letter-spacing:-.01em}
+h2{font-size:clamp(38px,5.2vw,66px)}
+h2 em,h1 em{font-style:italic;color:var(--gold)}
+.light h2 em{color:var(--bronze)}
+.lead{font-size:clamp(16px,1.5vw,18px);color:var(--t-light-2);margin-top:22px}
+.light .lead{color:var(--t-dark-2)}
+
+/* cota — linha de medida (assinatura "sob medida") */
+.cota{display:flex;align-items:center;justify-content:center;gap:14px;margin:26px auto 0;width:min(360px,82%);color:var(--gold);font-size:10.5px;font-weight:600;letter-spacing:.32em;text-transform:uppercase}
+.light .cota{color:var(--bronze)}
+.cota i{flex:1;height:1px;background:currentColor;position:relative;transform:scaleX(0);transition:transform 1.1s var(--ease) .2s}
+.cota i:first-child{transform-origin:100% 50%}.cota i:last-child{transform-origin:0 50%}
+.cota i::before{content:"";position:absolute;top:-5px;width:1px;height:11px;background:currentColor}
+.cota i:first-child::before{left:0}.cota i:last-child::before{right:0}
+.cota b{font-weight:600;white-space:nowrap;opacity:0;transition:opacity .6s .5s}
+.in .cota i,.cota.in i{transform:scaleX(1)}
+.in .cota b,.cota.in b{opacity:1}
+
+/* ===== reveal ===== */
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1s var(--ease),transform 1s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.split .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em}
+.split .w>span{display:inline-block;transform:translateY(108%);transition:transform 1s var(--ease);transition-delay:calc(var(--i)*55ms + var(--d,0s))}
+.split.in .w>span{transform:none}
+.img-rv{overflow:hidden;clip-path:inset(12% 12% 12% 12% round var(--r));transition:clip-path 1.3s var(--ease);transition-delay:var(--d,0s)}
+.img-rv img,.img-rv video{transform:scale(1.18);transition:transform 1.8s var(--ease);transition-delay:var(--d,0s)}
+.img-rv.in{clip-path:inset(0 0 0 0 round var(--r))}
+.img-rv.in img,.img-rv.in video{transform:scale(1)}
+
+/* ===== HERO ===== */
+.hero{min-height:100svh;padding:150px 0 70px;display:flex;align-items:center;overflow:hidden;background:var(--dark)}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 1px,transparent 1px 64px);mask-image:linear-gradient(180deg,#000,transparent 80%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 80%);pointer-events:none}
+.hero::after{content:"";position:absolute;left:50%;top:-25%;width:1000px;height:1000px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(200,164,90,.14),transparent);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;text-align:center}
+.g-badge{display:inline-flex;align-items:center;gap:12px;padding:8px 18px 8px 10px;border:1px solid rgba(200,164,90,.35);border-radius:999px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--t-light-2);transition:border-color .3s,color .3s}
+.g-badge:hover{border-color:var(--gold);color:var(--t-light)}
+.g-badge .gl{width:26px;height:26px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.g-badge .gl svg{width:15px;height:15px}
+.g-badge .st{display:flex;gap:2px;color:var(--gold)}
+.g-badge .st svg{width:13px;height:13px}
+.g-badge b{color:var(--t-light);font-weight:700;letter-spacing:.06em}
+.hero h1{font-size:clamp(46px,7.4vw,104px);margin:30px auto 0;max-width:15ch}
+.hero .lead{max-width:620px;margin-inline:auto}
+.hero .acts{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:38px}
+.tri{display:grid;grid-template-columns:1fr 1.25fr 1fr;gap:clamp(12px,2vw,24px);align-items:center;margin-top:clamp(56px,7vw,86px)}
+.tri figure{aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;position:relative;background:var(--dark-2)}
+.tri figure img,.tri figure video{width:100%;height:100%;object-fit:cover}
+.tri .side{transform:translateY(40px)}
+.tri figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 16px 18px;background:linear-gradient(transparent,rgba(5,5,5,.78));font-size:10.5px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;text-align:center}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(60px,7vw,90px);border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d)}
+.facts div{padding:28px 12px;text-align:center}
+.facts div+div{border-left:1px solid var(--line-d)}
+.facts b{display:block;font-family:var(--head);font-size:clamp(30px,3.4vw,44px);font-weight:500;color:var(--gold);line-height:1}
+.facts span{display:block;margin-top:10px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--t-light-2)}
+
+/* ===== duo ===== */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,92px);align-items:center}
+.duo figure{aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--paper-2);position:relative}
+.dark .duo figure{background:var(--dark-2)}
+.duo figure img,.duo figure video{width:100%;height:100%;object-fit:cover}
+.duo .txt h2{font-size:clamp(36px,4.4vw,58px)}
+.duo .txt .cota{margin:24px 0 0;justify-content:flex-start;width:230px}
+.duo .txt p{margin-top:20px;color:var(--t-light-2);font-size:17px}
+.light .duo .txt p{color:var(--t-dark-2)}
+.quote{margin-top:30px;padding:26px 28px;border-left:2px solid var(--gold);background:rgba(200,164,90,.07);border-radius:0 12px 12px 0;font-family:var(--head);font-size:clamp(21px,2vw,25px);font-weight:500;font-style:italic;line-height:1.4}
+.light .quote{background:var(--paper-2);border-color:var(--bronze);color:var(--t-dark)}
+.quote small{display:block;margin-top:14px;font-family:var(--body);font-style:normal;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze);font-weight:700}
+.dark .quote small{color:var(--gold)}
+.ticks{list-style:none;margin-top:26px;display:grid;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-weight:500}
+.ticks li::before{content:"";flex:none;width:18px;height:18px;margin-top:3px;border-radius:50%;background:var(--gold) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23141414' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat}
+.light .ticks li::before{background-color:var(--t-dark);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c8a45a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E")}
+.duo .acts{margin-top:34px;display:flex;gap:12px;flex-wrap:wrap}
+.tag-img{position:absolute;left:18px;bottom:18px;padding:8px 14px;border-radius:999px;background:rgba(10,10,10,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:10.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--t-light)}
+
+/* ===== diferenciais ===== */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{padding:38px 28px;border-radius:var(--r);background:var(--dark-2);border:1px solid var(--line-d);text-align:center;transition:transform .5s var(--ease),border-color .4s;display:flex;flex-direction:column;align-items:center}
+.card:hover{transform:translateY(-6px);border-color:rgba(200,164,90,.45)}
+.card .ico{width:60px;height:60px;margin-bottom:22px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(200,164,90,.4);color:var(--gold);transition:background .4s,color .4s}
+.card:hover .ico{background:var(--gold);color:var(--t-dark)}
+.card .ico svg{width:26px;height:26px}
+.card .n{display:block;font-size:11px;letter-spacing:.3em;color:var(--t-light-2);margin-bottom:8px}
+.card h3{font-size:26px}
+.card p{margin-top:12px;font-size:15px;color:var(--t-light-2)}
+
+/* ===== ambientes ===== */
+.amb-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.amb-row+.amb-lbl{margin-top:clamp(40px,5vw,60px)}
+.amb-lbl{display:flex;align-items:center;gap:18px;margin-bottom:22px;font-size:11px;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--bronze)}
+.amb-lbl::before,.amb-lbl::after{content:"";flex:1;height:1px;background:var(--line-l)}
+.amb-row a{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;display:block;background:var(--paper-2);isolation:isolate}
+.amb-row img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.amb-row a::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(8,8,8,.84));z-index:1}
+.amb-row .lb{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:26px 20px;text-align:center;color:var(--t-light)}
+.amb-row .lb h3{font-size:30px}
+.amb-row .lb p{margin-top:6px;font-size:13px;color:rgba(245,241,232,.75)}
+.amb-row .lb span{display:inline-flex;margin-top:10px;font-size:10.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);opacity:0;transform:translateY(8px);transition:opacity .45s,transform .45s var(--ease)}
+.amb-row a:hover img{transform:scale(1.07)}
+.amb-row a:hover .lb span,.amb-row a:focus-visible .lb span{opacity:1;transform:none}
+
+/* ===== portfólio ===== */
+.port{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.port button{position:relative;aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:var(--paper)}
+.port img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.port button::after{content:"";position:absolute;inset:0;background:rgba(10,10,10,.35) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c8a45a' stroke-width='1.6' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.5-3.5M11 8v6M8 11h6'/%3E%3C/svg%3E") center/38px no-repeat;opacity:0;transition:opacity .4s}
+.port button:hover img{transform:scale(1.06)}
+.port button:hover::after,.port button:focus-visible::after{opacity:1}
+.center-act{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:clamp(40px,5vw,56px)}
+
+.lbx{position:fixed;inset:0;z-index:150;background:rgba(5,5,5,.95);display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s;padding:20px}
+.lbx.open{opacity:1;visibility:visible}
+.lbx img{max-height:86svh;max-width:min(92vw,720px);border-radius:14px;transform:scale(.94);transition:transform .5s var(--ease)}
+.lbx.open img{transform:none}
+.lbx .x,.lbx .pv,.lbx .nx{position:absolute;width:52px;height:52px;border-radius:50%;border:1px solid var(--line-d);display:grid;place-items:center;color:var(--t-light);background:rgba(30,30,30,.7);transition:background .3s,color .3s}
+.lbx .x:hover,.lbx .pv:hover,.lbx .nx:hover{background:var(--gold);color:var(--t-dark)}
+.lbx .x{top:20px;right:20px}.lbx .pv{left:20px;top:50%;margin-top:-26px}.lbx .nx{right:20px;top:50%;margin-top:-26px}
+.lbx svg{width:22px;height:22px}
+
+/* ===== carrossel de vídeos ===== */
+.vc{position:relative;overflow:hidden;height:clamp(430px,47vw,580px);touch-action:pan-y;user-select:none}
+.vc .it{position:absolute;left:50%;top:50%;width:clamp(230px,24vw,340px);aspect-ratio:4/5;margin-left:calc(clamp(230px,24vw,340px)/-2);border-radius:var(--r);overflow:hidden;background:var(--dark-2);transition:transform .8s var(--ease),opacity .8s var(--ease),filter .8s,box-shadow .8s;transform:translateY(-50%) translateX(calc(var(--o)*78%)) scale(var(--s));opacity:var(--op);filter:saturate(var(--sat)) brightness(var(--br));z-index:var(--z);cursor:pointer}
+.vc .it video{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.vc .it.act{box-shadow:0 30px 80px -20px rgba(0,0,0,.8),0 0 0 1.5px var(--gold);cursor:default}
+.vc .it .tag{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);padding:6px 13px;border-radius:999px;background:rgba(10,10,10,.72);backdrop-filter:blur(6px);font-size:10px;letter-spacing:.24em;text-transform:uppercase;white-space:nowrap;opacity:0;transition:opacity .5s}
+.vc .it.act .tag{opacity:1}
+.vc-ctrl{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:34px}
+.vc-ctrl .ar{width:52px;height:52px;border-radius:50%;border:1px solid rgba(200,164,90,.5);display:grid;place-items:center;color:var(--gold);transition:background .3s,color .3s}
+.vc-ctrl .ar:hover{background:var(--gold);color:var(--t-dark)}
+.vc-ctrl .ar svg{width:20px;height:20px}
+.dots{display:flex;gap:8px}
+.dots button{width:8px;height:8px;border-radius:99px;background:rgba(255,255,255,.22);transition:width .4s var(--ease),background .4s}
+.dots button.on{width:28px;background:var(--gold)}
+
+/* ===== processo ===== */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative}
+.steps::before{content:"";position:absolute;left:12.5%;right:12.5%;top:33px;height:1px;background:rgba(200,164,90,.45);transform:scaleX(0);transition:transform 1.6s var(--ease) .3s}
+.steps.in::before{transform:scaleX(1)}
+.step{text-align:center;position:relative}
+.step .b{width:66px;height:66px;margin:0 auto 22px;border-radius:50%;background:var(--dark);border:1px solid var(--gold);display:grid;place-items:center;font-family:var(--head);font-size:26px;color:var(--gold);position:relative;z-index:1}
+.step h3{font-size:25px}
+.step p{margin-top:8px;font-size:15px;color:var(--t-light-2);max-width:250px;margin-inline:auto}
+
+/* ===== avaliações Google ===== */
+.score{display:grid;grid-template-columns:auto auto auto;justify-content:center;align-items:center;gap:clamp(20px,3vw,40px);margin:0 auto clamp(44px,6vw,64px)}
+.score .num{font-family:var(--head);font-size:clamp(84px,11vw,140px);line-height:.85;font-weight:500;color:var(--t-dark)}
+.score .stars{display:flex;gap:6px;color:var(--gold)}
+.score .stars svg{width:clamp(26px,3vw,36px);height:clamp(26px,3vw,36px);opacity:0;transform:scale(.4) rotate(-30deg);transition:opacity .5s,transform .7s cubic-bezier(.3,1.6,.5,1)}
+.score.in .stars svg{opacity:1;transform:none}
+.score.in .stars svg:nth-child(2){transition-delay:.1s}.score.in .stars svg:nth-child(3){transition-delay:.2s}.score.in .stars svg:nth-child(4){transition-delay:.3s}.score.in .stars svg:nth-child(5){transition-delay:.4s}
+.score .meta{display:grid;gap:10px}
+.score .meta small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--t-dark-2);font-weight:600;display:flex;align-items:center;gap:8px}
+.score .meta small svg{width:18px;height:18px}
+.score .vline{width:1px;height:90px;background:var(--line-l)}
+.revs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.rcard{background:var(--paper);border:1px solid var(--line-l);border-radius:var(--r);padding:26px 24px 22px;display:flex;flex-direction:column;transition:transform .5s var(--ease),box-shadow .5s}
+.rcard:hover{transform:translateY(-5px);box-shadow:0 22px 50px -26px rgba(0,0,0,.35)}
+.rcard .top{display:flex;align-items:center;gap:12px}
+.rcard .av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-family:var(--head);font-size:21px;font-weight:600;color:var(--gold);background:var(--t-dark);flex:none}
+.rcard .who b{display:block;font-size:15px;font-weight:700;line-height:1.2}
+.rcard .who span{font-size:12px;color:var(--t-dark-2)}
+.rcard .gg{margin-left:auto;width:20px;height:20px;flex:none}
+.rcard .st{display:flex;gap:2px;color:var(--gold);margin-top:16px}
+.rcard .st svg{width:15px;height:15px}
+.rcard p{margin-top:12px;font-size:14.5px;line-height:1.65;color:var(--t-dark-2);display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.rcard.open p{-webkit-line-clamp:unset;display:block}
+.rcard .more{margin-top:auto;padding-top:14px;align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--bronze)}
+.rcard .more[hidden]{display:none}
+
+/* ===== localização ===== */
+.hours{list-style:none;margin-top:26px;border-top:1px solid var(--line-d)}
+.hours li{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid var(--line-d);font-size:15px;color:var(--t-light-2)}
+.hours li b{color:var(--t-light);font-weight:600}
+.hours li.today{color:var(--gold)}.hours li.today b{color:var(--gold)}
+.open-now{display:inline-flex;align-items:center;gap:10px;margin-top:22px;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.open-now i{width:9px;height:9px;border-radius:50%;background:#5bd28a;box-shadow:0 0 0 4px rgba(91,210,138,.18)}
+.open-now.closed i{background:#d9705b;box-shadow:0 0 0 4px rgba(217,112,91,.18)}
+.addr{display:grid;gap:14px;margin-top:26px}
+.addr a,.addr div{display:flex;gap:14px;align-items:flex-start;font-size:15px;color:var(--t-light-2);transition:color .3s}
+.addr a:hover{color:var(--t-light)}
+.addr svg{width:20px;height:20px;flex:none;color:var(--gold);margin-top:2px}
+.map{margin-top:clamp(48px,6vw,72px);border-radius:var(--r);overflow:hidden;border:1px solid var(--line-d);height:clamp(280px,32vw,400px);background:var(--dark-2)}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(1) invert(.92) contrast(.9) brightness(.95)}
+
+/* ===== CTA final ===== */
+.final{text-align:center;overflow:hidden;background:var(--ink)}
+.final::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 1px,transparent 1px 64px);pointer-events:none}
+.final::after{content:"";position:absolute;left:50%;bottom:-40%;width:900px;height:900px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(200,164,90,.12),transparent);pointer-events:none}
+.final .wrap{position:relative;z-index:1}
+.final .sym{width:88px;height:88px;margin:0 auto 32px}
+.final h2{font-size:clamp(46px,7vw,92px)}
+.final .lead{max-width:620px;margin-inline:auto}
+.final .acts{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:40px}
+
+/* ===== rodapé ===== */
+footer{background:var(--ink);padding:20px 0 34px;text-align:center;border-top:1px solid var(--line-d)}
+footer .lg{width:min(260px,62vw);height:auto;margin:50px auto 0}
+footer .soc{display:flex;justify-content:center;gap:14px;margin-top:30px}
+footer .soc a{width:48px;height:48px;border-radius:50%;border:1px solid var(--line-d);display:grid;place-items:center;color:var(--gold);transition:background .3s,color .3s,border-color .3s}
+footer .soc a:hover{background:var(--gold);color:var(--t-dark);border-color:var(--gold)}
+footer .soc svg{width:20px;height:20px}
+footer .meta{display:flex;justify-content:center;gap:10px 28px;flex-wrap:wrap;margin-top:28px;font-size:14px;color:var(--t-light-2)}
+footer .meta a:hover{color:var(--gold)}
+footer .copy{margin-top:40px;padding-top:24px;border-top:1px solid var(--line-d);font-size:12px;letter-spacing:.06em;color:#77736b;line-height:1.9}
+
+.wpp{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:95;width:60px;height:60px;border-radius:50%;background:var(--gold);color:var(--t-dark);display:grid;place-items:center;box-shadow:0 14px 34px -8px rgba(0,0,0,.6);transition:transform .4s var(--ease),background .3s;transform:scale(0)}
+.wpp.show{transform:scale(1)}
+.wpp:hover{background:#fff}
+.wpp svg{width:30px;height:30px}
+.wpp::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--gold);animation:ring 2.4s ease-out infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.6);opacity:0}}
+
+/* ===== intro do logo (mapeada pelo logo horizontal oficial 2708×701) ===== */
+.intro{position:fixed;inset:0;z-index:300;background:var(--dark);display:grid;place-items:center;transition:opacity .9s var(--ease),visibility .9s}
+.intro::before{content:"";position:absolute;left:50%;top:50%;width:min(900px,120vw);height:min(900px,120vw);transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(200,164,90,.10),transparent);pointer-events:none}
+.intro.out{opacity:0;visibility:hidden}
+.intro .lg{position:relative;width:min(760px,86vw);aspect-ratio:2708/701;transition:transform .9s var(--ease)}
+.intro.out .lg{transform:scale(1.05)}
+.intro img{position:absolute;display:block;max-width:none;height:auto}
+.intro .sy{left:0;top:0;width:25.849%;opacity:0;transform:translateX(143.43%) scale(.8);animation:syIn .9s var(--ease) .2s forwards,syMove 1.05s cubic-bezier(.65,0,.25,1) 1.3s forwards}
+.intro .nm{left:29.948%;top:15.407%;width:70.052%;opacity:0;clip-path:inset(0 100% 0 0);animation:nmIn 1.15s cubic-bezier(.65,0,.25,1) 1.95s forwards}
+.intro .tg{left:29.948%;top:66.476%;width:29.468%;opacity:0;transform:translateY(40%);animation:tgIn .9s var(--ease) 2.85s forwards}
+.intro .line{position:absolute;left:29.948%;right:0;bottom:-22%;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:0 50%;animation:lnIn 1.1s var(--ease) 2.9s forwards;opacity:.6}
+@keyframes syIn{to{opacity:1;transform:translateX(143.43%) scale(1)}}
+@keyframes syMove{from{opacity:1;transform:translateX(143.43%) scale(1)}to{opacity:1;transform:translateX(0) scale(1)}}
+@keyframes nmIn{0%{opacity:1;clip-path:inset(0 100% 0 0)}100%{opacity:1;clip-path:inset(0 0 0 0)}}
+@keyframes tgIn{to{opacity:1;transform:none}}
+@keyframes lnIn{to{transform:scaleX(1)}}
+@keyframes fadeIn{to{opacity:1}}
+html.intro-on,html.intro-on body{overflow:hidden}
+.intro .skip-i{position:absolute;bottom:calc(28px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--t-light-2);opacity:0;animation:fadeIn .6s ease 1.2s forwards;padding:10px 14px}
+
+/* ===== responsivo ===== */
+@media (max-width:1020px){
+  .nav,.hdr .cta-s{display:none}
+  .burger{display:block}
+  .hdr .wrap{grid-template-columns:1fr auto}
+  .grid4,.revs{grid-template-columns:repeat(2,1fr)}
+  .port{grid-template-columns:repeat(3,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:44px}
+  .steps::before{display:none}
+  .facts{grid-template-columns:repeat(2,1fr)}
+  .facts div:nth-child(3){border-left:0}
+  .facts div:nth-child(n+3){border-top:1px solid var(--line-d)}
+}
+@media (max-width:760px){
+  .duo{grid-template-columns:1fr}
+  .duo.rev figure{order:-1}
+  .duo .txt{text-align:center}
+  .duo .txt .cota{margin-inline:auto}
+  .duo .acts{justify-content:center}
+  .quote{text-align:left}
+  .ticks{width:fit-content;margin-inline:auto;text-align:left}
+  .tri{grid-template-columns:1fr;max-width:340px;margin-inline:auto}
+  .tri .side{display:none}
+  .amb-row{grid-template-columns:1fr;gap:12px}
+  .amb-row a{aspect-ratio:4/3}
+  .amb-row .lb span{display:none}
+  .port{grid-template-columns:repeat(2,1fr);gap:10px}
+  .vc .it{--w:min(66vw,300px);width:var(--w);margin-left:calc(var(--w)/-2)}
+  .vc{height:min(100vw,440px)}
+  .score{grid-template-columns:1fr;justify-items:center;text-align:center;gap:16px}
+  .score .vline{display:none}
+  .score .meta small{justify-content:center}
+  .hours,.addr{text-align:left}
+}
+@media (max-width:560px){
+  .grid4,.revs,.steps{grid-template-columns:1fr}
+  .hero .acts .btn,.final .acts .btn{width:100%}
+  .hdr .logo img{height:32px}
+  .g-badge{font-size:10px;letter-spacing:.1em;gap:8px;padding:7px 12px 7px 8px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .rv,.split .w>span{opacity:1;transform:none}
+  .img-rv{clip-path:none}.img-rv img,.img-rv video{transform:none}
+  .intro .sy,.intro .nm,.intro .tg{opacity:1;transform:none;clip-path:none}
+  .intro .line{transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.5-.3z"/></symbol>
+  <symbol id="g" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></symbol>
+</svg>
+
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="lg">
+    <img class="sy" src="assets/intro-simbolo.png" alt="" width="700" height="701">
+    <img class="nm" src="assets/intro-nome.png" alt="" width="1897" height="439">
+    <img class="tg" src="assets/intro-tag.png" alt="" width="798" height="87">
+    <i class="line"></i>
+  </div>
+  <button class="skip-i" type="button">Pular</button>
+</div>
+<script>document.documentElement.classList.add('intro-on')</script>
+<a class="skip" href="#inicio">Pular para o conteúdo</a>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="#inicio" class="logo" aria-label="Planejart Móveis Planejados — início"><img src="assets/logo-h.png" alt="Planejart Móveis Projetados" width="1200" height="311"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#ambientes">Ambientes</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+    <a class="btn btn-p cta-s" data-wa href="#">Orçamento</a>
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mnav" aria-label="Menu mobile">
+  <a href="#sobre">Sobre</a>
+  <a href="#ambientes">Ambientes</a>
+  <a href="#portfolio">Portfólio</a>
+  <a href="#videos">Vídeos</a>
+  <a href="#avaliacoes">Avaliações</a>
+  <a href="#localizacao">Localização</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<main>
+<!-- 01 HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <a class="g-badge rv" href="#avaliacoes">
+      <span class="gl"><svg aria-hidden="true"><use href="#g"/></svg></span>
+      <span class="st" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+      <b>5,0</b> no Google
+    </a>
+    <h1 class="split">Móveis sob medida, <em>da nossa fábrica</em> para o seu&nbsp;ambiente.</h1>
+    <p class="lead rv" style="--d:.5s">Cozinhas, closets, escritórios e lojas completas com corte, produção e montagem feitos pela nossa própria equipe. Mais de 20 anos de marcenaria em Palmares – PE.</p>
+    <div class="acts rv" style="--d:.65s">
+      <a class="btn btn-p" data-wa href="#"><svg aria-hidden="true"><use href="#wa"/></svg>Solicitar meu orçamento</a>
+      <a class="btn btn-g" href="#portfolio">Ver projetos entregues</a>
+    </div>
+    <div class="tri">
+      <figure class="side img-rv" style="--d:.35s"><img src="assets/fotos/closet-led-2.webp" alt="Closet planejado com iluminação em LED, gaveteiro e puxadores dourados" width="1078" height="1350"><figcaption>Closets</figcaption></figure>
+      <figure class="img-rv" style="--d:.2s"><video src="assets/videos/principal.mp4" poster="assets/videos/principal.webp" autoplay muted loop playsinline preload="auto" aria-label="Vídeo de painel ripado com estantes iluminadas feito pela Planejart"></video></figure>
+      <figure class="side img-rv" style="--d:.45s"><img src="assets/fotos/loja-roupas.webp" alt="Loja de roupas com estantes em madeira, mesa central e expositores" width="1086" height="1357"><figcaption>Lojas completas</figcaption></figure>
+    </div>
+    <div class="facts rv">
+      <div><b>20+</b><span>anos de mercado</span></div>
+      <div><b>100%</b><span>fábrica própria</span></div>
+      <div><b>2</b><span>casa e empresa</span></div>
+      <div><b>5,0</b><span>estrelas no Google</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 SOBRE -->
+<section class="light" id="sobre">
+  <div class="wrap duo">
+    <figure class="img-rv"><img src="assets/fotos/escada-expositor.webp" alt="Estante planejada sob a escada com iluminação em LED e nichos expositores" loading="lazy" width="1086" height="1357"></figure>
+    <div class="txt">
+      <span class="eyebrow rv">Planejart Móveis Planejados</span>
+      <h2 class="split">Duas décadas transformando <em>ambientes com precisão.</em></h2>
+      <div class="cota" aria-hidden="true"><i></i><b>desde o corte</b><i></i></div>
+      <p class="rv" style="--d:.2s">Somos uma empresa com mais de duas décadas de experiência no mercado de móveis planejados, comprometida em transformar ambientes com funcionalidade, beleza e sofisticação. Construímos uma trajetória sólida priorizando a qualidade dos materiais, a excelência no atendimento e a personalização de cada projeto.</p>
+      <blockquote class="quote rv" style="--d:.3s">Nosso foco está em criar soluções sob medida que atendam às necessidades e ao estilo de vida de cada cliente.<small>Planejart · Palmares – PE</small></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- 03 DIFERENCIAIS -->
+<section class="dark" id="diferenciais">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow rv">Diferenciais</span>
+      <h2 class="split">O que faz um móvel Planejart <em>durar e encaixar.</em></h2>
+      <div class="cota" aria-hidden="true"><i></i><b>04</b><i></i></div>
+    </div>
+    <div class="grid4">
+      <article class="card rv" style="--d:0s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l5 3V10l5 3V7l8 4v10z"/><path d="M3 21h18M8 17h2M13 17h2"/></svg></div><span class="n">01</span><h3>Fábrica própria</h3><p>Controle completo do processo, do corte à montagem final, para um encaixe preciso no seu espaço.</p></article>
+      <article class="card rv" style="--d:.08s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 21V9"/><path d="M13 13l4 4"/></svg></div><span class="n">02</span><h3>Além do MDF</h3><p>Metalon, vidros especiais, espelhos e projetos de iluminação integrados ao mobiliário.</p></article>
+      <article class="card rv" style="--d:.16s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div><span class="n">03</span><h3>Casa e empresa</h3><p>Experiência comprovada em residências e em projetos completos para lojas e empresas.</p></article>
+      <article class="card rv" style="--d:.24s"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><span class="n">04</span><h3>Tradição na região</h3><p>Mais de 20 anos de atuação consolidada em Palmares e nas cidades vizinhas de Pernambuco.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 04 AMBIENTES -->
+<section class="light" id="ambientes">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow rv">Ambientes</span>
+      <h2 class="split">Do closet da sua casa <em>à loja inteira.</em></h2>
+      <div class="cota" aria-hidden="true"><i></i><b>residencial · comercial</b><i></i></div>
+      <p class="lead rv" style="--d:.2s">Cozinhas, quartos e closets, salas, banheiros, lavanderias e áreas gourmet. Para empresas: lojas completas, balcões, expositores, estantes e mobiliário corporativo.</p>
+    </div>
+    <div class="amb-lbl rv">Residencial</div>
+    <div class="amb-row">
+      <a class="img-rv" style="--d:0s" data-wa href="#"><img src="assets/fotos/cozinha-cinza-led.webp" alt="Cozinha planejada cinza com LED sob os armários e bancada preta" loading="lazy" width="1200" height="1500"><div class="lb"><h3>Cozinhas</h3><p>Armários, torres e bancadas</p><span>Pedir orçamento →</span></div></a>
+      <a class="img-rv" style="--d:.1s" data-wa href="#"><img src="assets/fotos/closet-led-1.webp" alt="Closet planejado com nichos iluminados e gaveteiros" loading="lazy" width="1078" height="1350"><div class="lb"><h3>Closets e quartos</h3><p>Guarda-roupas, nichos e LED</p><span>Pedir orçamento →</span></div></a>
+      <a class="img-rv" style="--d:.2s" data-wa href="#"><img src="assets/fotos/escritorio-l.webp" alt="Escritório com mesa em L preta, gaveteiro e perfil de LED" loading="lazy" width="1200" height="1500"><div class="lb"><h3>Escritórios</h3><p>Home office e mesas em L</p><span>Pedir orçamento →</span></div></a>
+    </div>
+    <div class="amb-lbl rv">Comercial</div>
+    <div class="amb-row">
+      <a class="img-rv" style="--d:0s" data-wa href="#"><img src="assets/fotos/loja-infantil.webp" alt="Loja infantil com módulos coloridos, gaveteiros e araras" loading="lazy" width="1086" height="1357"><div class="lb"><h3>Lojas completas</h3><p>Projeto do salão inteiro</p><span>Pedir orçamento →</span></div></a>
+      <a class="img-rv" style="--d:.1s" data-wa href="#"><img src="assets/fotos/balcao-recepcao.webp" alt="Balcão de recepção em madeira com tampo marmorizado" loading="lazy" width="1200" height="1500"><div class="lb"><h3>Balcões</h3><p>Caixa, recepção e atendimento</p><span>Pedir orçamento →</span></div></a>
+      <a class="img-rv" style="--d:.2s" data-wa href="#"><img src="assets/fotos/expositor-capas.webp" alt="Expositor em madeira com iluminação para capas e acessórios" loading="lazy" width="1200" height="1500"><div class="lb"><h3>Expositores</h3><p>Vitrines, estantes e painéis</p><span>Pedir orçamento →</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 05 MATERIAIS -->
+<section class="dark" id="materiais">
+  <div class="wrap duo">
+    <figure class="img-rv"><img src="assets/fotos/prateleiras-metalon.webp" alt="Estrutura de metalon preto com prateleiras amadeiradas e LED em todas as prateleiras" loading="lazy" width="1200" height="1500"><span class="tag-img">Metalon + LED</span></figure>
+    <div class="txt">
+      <span class="eyebrow rv">Materiais</span>
+      <h2 class="split">Metalon, vidro, espelho <em>e luz no mesmo projeto.</em></h2>
+      <div class="cota" aria-hidden="true"><i></i><b>acabamento</b><i></i></div>
+      <p class="rv" style="--d:.2s">Não trabalhamos apenas com o MDF tradicional. Cada projeto pode integrar estruturas metálicas, vidros especiais, espelhos e iluminação para chegar ao visual que você imaginou, com a resistência que o dia a dia exige.</p>
+      <ul class="ticks rv" style="--d:.3s"><li>Perfis de LED embutidos em prateleiras e nichos</li><li>Estruturas em metalon para lojas e áreas de alto uso</li><li>Vidros, espelhos e ferragens escolhidos com você</li></ul>
+      <div class="acts rv" style="--d:.4s"><a class="btn btn-p" data-wa href="#">Quero esse acabamento</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 COMERCIAL -->
+<section class="light alt" id="comercial">
+  <div class="wrap duo rev">
+    <div class="txt">
+      <span class="eyebrow rv">Para empresas</span>
+      <h2 class="split">Sua loja pronta, <em>do balcão à vitrine.</em></h2>
+      <div class="cota" aria-hidden="true"><i></i><b>projeto completo</b><i></i></div>
+      <p class="rv" style="--d:.2s">Executamos projetos completos para lojas e empresas, unindo design, funcionalidade e acabamento de alto padrão. Você conversa com uma equipe só, do primeiro desenho à última prateleira instalada.</p>
+      <ul class="ticks rv" style="--d:.3s"><li>Balcões, caixas e recepções</li><li>Expositores, vitrines e estantes iluminadas</li><li>Mobiliário corporativo e salas de atendimento</li></ul>
+      <div class="acts rv" style="--d:.4s"><a class="btn btn-p" data-wa href="#">Orçar minha loja</a></div>
+    </div>
+    <figure class="img-rv"><img src="assets/fotos/vitrine-celulares.webp" alt="Vitrine planejada com portas de vidro, prateleiras em madeira e LED" loading="lazy" width="1200" height="1500"><span class="tag-img">Vitrine iluminada</span></figure>
+  </div>
+</section>
+
+<!-- 07 PORTFÓLIO -->
+<section class="light" id="portfolio">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow rv">Projetos entregues</span>
+      <h2 class="split">Portfólio</h2>
+      <div class="cota" aria-hidden="true"><i></i><b>Palmares · PE</b><i></i></div>
+      <p class="lead rv" style="--d:.2s">Ambientes reais, fotografados depois da montagem. Toque em uma foto para ampliar.</p>
+    </div>
+    <div class="port">
+      <button class="img-rv" style="--d:0s"><img src="assets/fotos/arara-iluminada.webp" alt="Arara iluminada com moldura de LED em loja de roupas" loading="lazy"></button>
+      <button class="img-rv" style="--d:.06s"><img src="assets/fotos/cozinha-cinza.webp" alt="Cozinha cinza com armários aéreos de vidro e puxadores cava" loading="lazy"></button>
+      <button class="img-rv" style="--d:.12s"><img src="assets/fotos/closet-corredor.webp" alt="Closet corredor com LED nos nichos e gaveteiros" loading="lazy"></button>
+      <button class="img-rv" style="--d:.18s"><img src="assets/fotos/nichos-coloridos.webp" alt="Nichos em MDF nas cores azul, verde e rosa" loading="lazy"></button>
+      <button class="img-rv" style="--d:0s"><img src="assets/fotos/closet-branco-2.webp" alt="Closet branco em L com gaveteiros abertos" loading="lazy"></button>
+      <button class="img-rv" style="--d:.06s"><img src="assets/fotos/balcao-cinza.webp" alt="Balcão comercial cinza com nichos" loading="lazy"></button>
+      <button class="img-rv" style="--d:.12s"><img src="assets/fotos/portas-palhinha.webp" alt="Guarda-roupa lilás com portas de palhinha" loading="lazy"></button>
+      <button class="img-rv" style="--d:.18s"><img src="assets/fotos/loja-prateleiras.webp" alt="Loja com estantes brancas e gôndola central" loading="lazy"></button>
+      <button class="img-rv" style="--d:0s"><img src="assets/fotos/bancada-cozinha.webp" alt="Cozinha com bancada branca e portas cinza" loading="lazy"></button>
+      <button class="img-rv" style="--d:.06s"><img src="assets/fotos/armario-infantil.webp" alt="Armário infantil com nichos coloridos e gavetas" loading="lazy"></button>
+      <button class="img-rv" style="--d:.12s"><img src="assets/fotos/closet-branco-1.webp" alt="Closet branco com cabideiros e gavetas" loading="lazy"></button>
+      <button class="img-rv" style="--d:.18s"><img src="assets/fotos/cozinha-portas.webp" alt="Armários de cozinha cinza com dobradiças de alto padrão" loading="lazy"></button>
+    </div>
+    <div class="center-act rv"><a class="btn btn-p" href="https://www.instagram.com/moveisplanejart/" target="_blank" rel="noopener">Ver mais no Instagram</a></div>
+  </div>
+</section>
+
+<!-- 08 VÍDEOS -->
+<section class="dark" id="videos">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow rv">Na prática</span>
+      <h2 class="split">Veja os ambientes <em>em movimento.</em></h2>
+      <div class="cota" aria-hidden="true"><i></i><b>vídeos</b><i></i></div>
+      <p class="lead rv" style="--d:.2s">Painéis, closets, expositores e lojas, direto das entregas da Planejart.</p>
+    </div>
+  </div>
+  <div class="vc rv" id="vc" aria-roledescription="carrossel" aria-label="Vídeos de projetos">
+    <div class="it"><video src="assets/videos/v1.mp4" poster="assets/videos/v1.webp" muted loop playsinline preload="none"></video><span class="tag">Painel com LED</span></div>
+    <div class="it"><video src="assets/videos/v2.mp4" poster="assets/videos/v2.webp" muted loop playsinline preload="none"></video><span class="tag">Expositor iluminado</span></div>
+    <div class="it"><video src="assets/videos/v3.mp4" poster="assets/videos/v3.webp" muted loop playsinline preload="none"></video><span class="tag">Balcão Planejart</span></div>
+    <div class="it"><video src="assets/videos/v4.mp4" poster="assets/videos/v4.webp" muted loop playsinline preload="none"></video><span class="tag">Closet com LED</span></div>
+    <div class="it"><video src="assets/videos/v5.mp4" poster="assets/videos/v5.webp" muted loop playsinline preload="none"></video><span class="tag">Sala e espelhos</span></div>
+    <div class="it"><video src="assets/videos/v6.mp4" poster="assets/videos/v6.webp" muted loop playsinline preload="none"></video><span class="tag">Estante e gaveteiro</span></div>
+    <div class="it"><video src="assets/videos/v7.mp4" poster="assets/videos/v7.webp" muted loop playsinline preload="none"></video><span class="tag">Loja de acessórios</span></div>
+    <div class="it"><video src="assets/videos/v8.mp4" poster="assets/videos/v8.webp" muted loop playsinline preload="none"></video><span class="tag">Home office</span></div>
+  </div>
+  <div class="vc-ctrl">
+    <button class="ar" id="vprev" aria-label="Vídeo anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div class="dots" id="vdots"></div>
+    <button class="ar" id="vnext" aria-label="Próximo vídeo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+</section>
+
+<!-- 09 CEO -->
+<section class="light" id="guilherme">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow rv">Quem está à frente</span>
+      <h2 class="split">Guilherme Pedrosa</h2>
+      <div class="cota" aria-hidden="true"><i></i><b>CEO · Planejart</b><i></i></div>
+    </div>
+    <div class="duo">
+      <figure class="img-rv"><img src="assets/guilherme-pedrosa.webp" alt="Guilherme Pedrosa, CEO da Planejart, com camisa polo preta da marca" loading="lazy" width="1100" height="1375"></figure>
+      <div class="txt">
+        <span class="eyebrow rv">Atendimento de perto</span>
+        <h2 class="split">Cada projeto acompanhado <em>do começo ao fim.</em></h2>
+        <div class="cota" aria-hidden="true"><i></i><b>confiança</b><i></i></div>
+        <p class="rv" style="--d:.2s">À frente da Planejart, Guilherme Pedrosa conduz uma empresa que cresceu priorizando a excelência no atendimento e a personalização de cada projeto. Da primeira conversa à entrega, o cliente sabe com quem está falando e o que vai receber.</p>
+        <ul class="ticks rv" style="--d:.3s"><li>Atendimento direto com a equipe responsável</li><li>Projeto aprovado antes de ir para a produção</li><li>Entrega e montagem acompanhadas</li></ul>
+        <div class="acts rv" style="--d:.4s"><a class="btn btn-p" data-wa href="#">Falar com a Planejart</a></div>
+      </div>
+    </div>
+    <div class="duo rev" style="margin-top:clamp(72px,9vw,120px)">
+      <div class="txt">
+        <span class="eyebrow rv">Equipe própria</span>
+        <h2 class="split">Quem fabrica <em>é quem monta.</em></h2>
+        <div class="cota" aria-hidden="true"><i></i><b>precisão</b><i></i></div>
+        <p class="rv" style="--d:.2s">A mesma empresa que corta as peças na fábrica leva o projeto até o seu endereço e faz a montagem. Isso evita improvisos, garante o encaixe e deixa o resultado exatamente como foi aprovado.</p>
+        <ul class="ticks rv" style="--d:.3s"><li>Montadores uniformizados e treinados</li><li>Ajuste fino de portas, gavetas e alinhamentos</li><li>Ambiente entregue limpo e pronto para usar</li></ul>
+      </div>
+      <figure class="img-rv"><img src="assets/fotos/montagem-loja.webp" alt="Equipe da Planejart montando estantes brancas em uma loja" loading="lazy" width="1200" height="1500"><span class="tag-img">Montagem em loja</span></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 10 PROCESSO -->
+<section class="dark" id="processo">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow rv">Como funciona</span>
+      <h2 class="split">Do primeiro contato <em>ao ambiente pronto.</em></h2>
+      <div class="cota" aria-hidden="true"><i></i><b>4 etapas</b><i></i></div>
+    </div>
+    <div class="steps rv">
+      <div class="step"><div class="b">1</div><h3>Conversa e medição</h3><p>Entendemos sua rotina e medimos o ambiente com precisão.</p></div>
+      <div class="step"><div class="b">2</div><h3>Projeto</h3><p>Você escolhe cores, materiais e aprova cada detalhe antes da produção.</p></div>
+      <div class="step"><div class="b">3</div><h3>Fábrica própria</h3><p>Corte e produção das peças sob medida na nossa fábrica.</p></div>
+      <div class="step"><div class="b">4</div><h3>Montagem</h3><p>Instalação pela nossa equipe, com tudo ajustado e conferido.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 AVALIAÇÕES -->
+<section class="light alt" id="avaliacoes">
+  <div class="wrap">
+    <div class="head" style="margin-bottom:clamp(30px,4vw,44px)">
+      <span class="eyebrow rv">Avaliações reais</span>
+      <h2 class="split">Quem recebeu <em>recomenda.</em></h2>
+      <div class="cota" aria-hidden="true"><i></i><b>Google</b><i></i></div>
+    </div>
+    <div class="score rv">
+      <div class="num">5,0</div>
+      <div class="vline" aria-hidden="true"></div>
+      <div class="meta">
+        <div class="stars" aria-label="5 de 5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+        <small><svg aria-hidden="true"><use href="#g"/></svg>Nota máxima no Google</small>
+      </div>
+    </div>
+    <div class="revs">
+      <article class="rcard rv" style="--d:0s"><div class="top"><span class="av">K</span><div class="who"><b>Karla Wanessa</b><span>há um mês</span></div><svg class="gg" aria-hidden="true"><use href="#g"/></svg></div><div class="st" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>Amei cada detalhe do projeto desenvolvido para o quarto dos meus filhos! Desde o primeiro contato até a finalização, fui encantada pelo profissionalismo, pela escuta atenta, pela assertividade e pela tranquilidade na condução de todo o processo. O diálogo, a coerência, a objetividade e, sobretudo, o cuidado com cada detalhe fizeram toda a diferença. Foi uma experiência marcada pela confiança, pelo respeito às nossas expectativas e pela sensibilidade em transformar nossos desejos em realidade. Recomendo! Não escolheria outro lugar para realizar meus projetos. Inclusive, os próximos já têm destino certo! Minha gratidão a toda a equipe pelo cuidado e pela excelência em cada etapa!</p><button class="more" type="button">Ler mais</button></article>
+      <article class="rcard rv" style="--d:.06s"><div class="top"><span class="av">M</span><div class="who"><b>Marcio Caetano</b><span>há 4 semanas</span></div><svg class="gg" aria-hidden="true"><use href="#g"/></svg></div><div class="st" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>Empresa dedicada em entregar um excelente produto com profissionais dedicados em executar um serviço com excelência e qualidade para o cliente, produto de primeira qualidade com uma ótima execução, um acabamento perfeito. Recomendo sem dúvidas, vale cada centavo investido!</p><button class="more" type="button">Ler mais</button></article>
+      <article class="rcard rv" style="--d:.12s"><div class="top"><span class="av">A</span><div class="who"><b>Agnys Queiroga</b><span>há um mês</span></div><svg class="gg" aria-hidden="true"><use href="#g"/></svg></div><div class="st" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>Procurei a Planejart para fazer a cozinha do meu apartamento de Maceió-AL, gostei muito do atendimento e toda assistência prestada! Toda a cozinha foi entregue antes do prazo combinado e o resultado ficou além do que esperávamos.</p><button class="more" type="button">Ler mais</button></article>
+      <article class="rcard rv" style="--d:.18s"><div class="top"><span class="av">H</span><div class="who"><b>Hilanna Andrade</b><span>há um mês</span></div><svg class="gg" aria-hidden="true"><use href="#g"/></svg></div><div class="st" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>Gostaríamos de deixar registrada nossa imensa satisfação com todo o trabalho realizado! Desde o primeiro atendimento, fomos surpreendidas pela atenção, profissionalismo e cuidado em cada detalhe. A entrega aconteceu antes do prazo previsto, e o resultado final do projeto ficou muito além das nossas expectativas! Ficamos encantadas com cada detalhe dos móveis planejados da nossa loja.</p><button class="more" type="button">Ler mais</button></article>
+      <article class="rcard rv" style="--d:0s"><div class="top"><span class="av">D</span><div class="who"><b>Daniele Batista</b><span>há um mês</span></div><svg class="gg" aria-hidden="true"><use href="#g"/></svg></div><div class="st" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>Tudo perfeito, desde o atendimento até a entrega do projeto. Ficou exatamente como esperávamos, com muito capricho, profissionalismo e atenção aos detalhes. Tudo foi entregue dentro do prazo combinado. Estamos muito satisfeitas com o resultado e recomendamos o trabalho!</p><button class="more" type="button">Ler mais</button></article>
+      <article class="rcard rv" style="--d:.06s"><div class="top"><span class="av">P</span><div class="who"><b>Pedro Sweet</b><span>há uma semana</span></div><svg class="gg" aria-hidden="true"><use href="#g"/></svg></div><div class="st" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>Excelente! Atendimento e qualidade excepcionais! Indico muito!</p><button class="more" type="button">Ler mais</button></article>
+      <article class="rcard rv" style="--d:.12s"><div class="top"><span class="av">N</span><div class="who"><b>Natalia Patricia</b><span>há um mês</span></div><svg class="gg" aria-hidden="true"><use href="#g"/></svg></div><div class="st" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>Excelente atendimento, a entrega mais rápida da região e a melhor parte, excelente trabalho, sem falar nos materiais. 🤩👏👏</p><button class="more" type="button">Ler mais</button></article>
+      <article class="rcard rv" style="--d:.18s"><div class="top"><span class="av">M</span><div class="who"><b>Maria José</b><span>há 3 dias</span></div><svg class="gg" aria-hidden="true"><use href="#g"/></svg></div><div class="st" aria-label="5 estrelas"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>Gostei muito, uma equipe excelente, o móvel de ótima qualidade, estão de parabéns. Moro na cidade de Xexéu, amei o trabalho.</p><button class="more" type="button">Ler mais</button></article>
+    </div>
+    <div class="center-act rv"><a class="btn btn-g" href="https://www.google.com/search?q=Planejart+M%C3%B3veis+Planejados+Palmares+PE" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 48 48"><use href="#g"/></svg>Ver avaliações no Google</a></div>
+  </div>
+</section>
+
+<!-- 12 LOCALIZAÇÃO -->
+<section class="dark" id="localizacao">
+  <div class="wrap">
+    <div class="duo">
+      <figure class="img-rv"><img src="assets/fotos/fachada.webp" alt="Fachada da Planejart em Palmares com placa azul e portão" loading="lazy" width="1122" height="1402"><span class="tag-img">Nossa sede · Palmares</span></figure>
+      <div class="txt">
+        <span class="eyebrow rv">Localização</span>
+        <h2 class="split">Venha conhecer <em>a Planejart.</em></h2>
+        <div class="cota" aria-hidden="true"><i></i><b>Palmares · PE</b><i></i></div>
+        <div class="open-now rv" id="openNow"><i></i><span>Horário de funcionamento</span></div>
+        <ul class="hours rv" id="hours" style="--d:.1s">
+          <li data-d="1,2,3,4,5"><span>Segunda a sexta</span><b>08:00 – 20:00</b></li>
+          <li data-d="6"><span>Sábado</span><b>08:00 – 14:00</b></li>
+          <li data-d="0"><span>Domingo</span><b>Fechado</b></li>
+        </ul>
+        <div class="addr rv" style="--d:.2s">
+          <a href="https://www.google.com/maps/search/?api=1&query=Planejart+M%C3%B3veis+Planejados+Av.+Marcos+Freire+170+Palmares+PE" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Av. Ministro Marcos Freire, 170 – Centro, Palmares – PE, 55540-000</a>
+          <a data-wa href="#"><svg aria-hidden="true"><use href="#wa"/></svg>(81) 98442-1539</a>
+          <a href="mailto:contato.planejartmoveis@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>contato.planejartmoveis@gmail.com</a>
+        </div>
+        <div class="acts rv" style="--d:.3s"><a class="btn btn-p" href="https://www.google.com/maps/dir/?api=1&destination=Planejart+M%C3%B3veis+Planejados+Av.+Marcos+Freire+170+Palmares+PE" target="_blank" rel="noopener">Traçar rota</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 CTA FINAL -->
+<section class="final" id="contato">
+  <div class="wrap">
+    <img class="sym rv" src="assets/simbolo.png" alt="" aria-hidden="true" width="400" height="400">
+    <h2 class="split">Vamos planejar <em>o seu ambiente?</em></h2>
+    <div class="cota" aria-hidden="true"><i></i><b>sob medida</b><i></i></div>
+    <p class="lead rv" style="--d:.2s">Conte o que você precisa para sua casa ou empresa. A equipe da Planejart responde pelo WhatsApp e agenda a medição.</p>
+    <div class="acts rv" style="--d:.3s">
+      <a class="btn btn-p" data-wa href="#"><svg aria-hidden="true"><use href="#wa"/></svg>Quero meu orçamento</a>
+      <a class="btn btn-g" href="https://www.instagram.com/moveisplanejart/" target="_blank" rel="noopener">Seguir no Instagram</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="lg" src="assets/logo-v.png" alt="Planejart Móveis Projetados" width="900" height="569">
+    <div class="soc">
+      <a href="https://www.instagram.com/moveisplanejart/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r=".6" fill="currentColor"/></svg></a>
+      <a data-wa href="#" aria-label="WhatsApp"><svg><use href="#wa"/></svg></a>
+      <a href="mailto:contato.planejartmoveis@gmail.com" aria-label="E-mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+    </div>
+    <div class="meta">
+      <span>Av. Ministro Marcos Freire, 170 – Centro, Palmares – PE</span>
+      <a data-wa href="#">(81) 98442-1539</a>
+      <a href="https://www.instagram.com/moveisplanejart/" target="_blank" rel="noopener">@moveisplanejart</a>
+    </div>
+    <p class="copy">© <span id="yr"></span> Planejart Móveis Planejados · CNPJ 68.660.971/0001-00<br>CEO Guilherme Pedrosa · Móveis residenciais e comerciais em Palmares – PE</p>
+  </div>
+</footer>
+
+<a class="wpp" data-wa href="#" aria-label="Falar no WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<div class="lbx" id="lbx" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <img alt="">
+  <button class="x" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="pv" aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="nx" aria-label="Próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+
+<script>
+(()=>{
+const WA='5581984421539',MSG='Olá, vim pelo site, gostei muito do trabalho e gostaria de um orçamento!';
+document.querySelectorAll('[data-wa]').forEach(a=>{a.href='https://wa.me/'+WA+'?text='+encodeURIComponent(MSG);a.target='_blank';a.rel='noopener'});
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+/* split de palavras */
+document.querySelectorAll('.split').forEach(el=>{
+  let i=0;
+  const walk=n=>{[...n.childNodes].forEach(c=>{
+    if(c.nodeType===3){
+      const f=document.createDocumentFragment();
+      c.textContent.split(/([ \t\n\r]+)/).forEach(t=>{
+        if(!t)return;
+        if(/^[ \t\n\r]+$/.test(t)){f.appendChild(document.createTextNode(' '));return}
+        const w=document.createElement('span');w.className='w';
+        const s=document.createElement('span');s.textContent=t;s.style.setProperty('--i',i++);
+        w.appendChild(s);f.appendChild(w);
+      });
+      c.replaceWith(f);
+    }else if(c.nodeType===1)walk(c);
+  })};
+  walk(el);
+});
+
+/* revelar ao rolar */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.rv,.split,.img-rv,.cota,.steps').forEach(el=>{if(!el.closest('.hero'))io.observe(el)});
+const heroIn=()=>document.querySelectorAll('.hero .rv,.hero .split,.hero .img-rv').forEach(el=>el.classList.add('in'));
+const intro=document.getElementById('intro');
+let introDone=false;
+const endIntro=()=>{if(introDone)return;introDone=true;intro.classList.add('out');document.documentElement.classList.remove('intro-on');setTimeout(heroIn,250);setTimeout(()=>intro.remove(),1100)};
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+setTimeout(endIntro,reduce?1200:4900);
+intro.addEventListener('click',endIntro);
+
+/* header, progresso, menu ativo, botão flutuante */
+const hdr=document.getElementById('hdr'),bar=document.querySelector('.progress'),wpp=document.querySelector('.wpp');
+const links=[...document.querySelectorAll('.nav a')];
+const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+let tick=false;
+const onScroll=()=>{
+  const y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+  hdr.classList.toggle('solid',y>40);
+  bar.style.transform='scaleX('+(h>0?y/h:0)+')';
+  wpp.classList.toggle('show',y>innerHeight*.6);
+  let cur=-1;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.4)cur=i});
+  links.forEach((a,i)=>a.classList.toggle('on',i===cur));
+  tick=false;
+};
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
+
+/* menu mobile */
+const burger=document.querySelector('.burger');
+const toggle=o=>{document.body.classList.toggle('menu-open',o);burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''};
+burger.addEventListener('click',()=>toggle(!document.body.classList.contains('menu-open')));
+document.querySelectorAll('.mnav a').forEach(a=>a.addEventListener('click',()=>toggle(false)));
+
+/* vídeo do hero: toca só quando visível */
+const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;v.muted=true;if(e.isIntersecting){v.play().catch(()=>{})}else v.pause()}),{threshold:.25});
+document.querySelectorAll('.hero video').forEach(v=>vio.observe(v));
+
+/* avaliações: "ler mais" só quando o texto foi cortado */
+const revs=[...document.querySelectorAll('.rcard')];
+const checkMore=()=>revs.forEach(r=>{const p=r.querySelector('p'),b=r.querySelector('.more');if(r.classList.contains('open'))return;b.hidden=p.scrollHeight<=p.clientHeight+2});
+revs.forEach(r=>r.querySelector('.more').addEventListener('click',e=>{const o=r.classList.toggle('open');e.currentTarget.textContent=o?'Ler menos':'Ler mais'}));
+addEventListener('load',checkMore);addEventListener('resize',checkMore);setTimeout(checkMore,600);
+
+/* horário: destaca o dia e mostra aberto/fechado (horário de Recife) */
+try{
+  const now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/Recife'}));
+  const d=now.getDay(),m=now.getHours()*60+now.getMinutes();
+  const open=(d>=1&&d<=5&&m>=480&&m<1200)||(d===6&&m>=480&&m<840);
+  document.querySelectorAll('#hours li').forEach(li=>{if(li.dataset.d.split(',').map(Number).includes(d))li.classList.add('today')});
+  const on=document.getElementById('openNow');on.classList.toggle('closed',!open);on.querySelector('span').textContent=open?'Aberto agora':'Fechado agora';
+}catch(e){}
+
+/* lightbox */
+const shots=[...document.querySelectorAll('.port button')],lbx=document.getElementById('lbx'),limg=lbx.querySelector('img');let li=0,lastF=null;
+const show=i=>{li=(i+shots.length)%shots.length;const im=shots[li].querySelector('img');limg.src=im.src;limg.alt=im.alt};
+shots.forEach((b,i)=>b.addEventListener('click',()=>{lastF=b;show(i);lbx.classList.add('open');document.body.style.overflow='hidden';lbx.querySelector('.x').focus()}));
+const close=()=>{lbx.classList.remove('open');document.body.style.overflow='';lastF&&lastF.focus()};
+lbx.querySelector('.x').onclick=close;lbx.querySelector('.pv').onclick=()=>show(li-1);lbx.querySelector('.nx').onclick=()=>show(li+1);
+lbx.addEventListener('click',e=>{if(e.target===lbx)close()});
+addEventListener('keydown',e=>{if(!lbx.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(li-1);if(e.key==='ArrowRight')show(li+1)});
+
+/* carrossel de vídeos — destaque no centro, sem som, autoplay */
+const vc=document.getElementById('vc'),items=[...vc.querySelectorAll('.it')],N=items.length,dots=document.getElementById('vdots');
+let act=0,vis=false,timer=null;
+items.forEach((_,i)=>{const d=document.createElement('button');d.setAttribute('aria-label','Vídeo '+(i+1));d.onclick=()=>go(i);dots.appendChild(d)});
+const render=()=>{
+  items.forEach((it,i)=>{
+    let o=i-act;if(o>N/2)o-=N;if(o<-N/2)o+=N;
+    const a=Math.abs(o);
+    it.style.setProperty('--o',o);
+    it.style.setProperty('--s',a===0?1:a===1?.82:.66);
+    it.style.setProperty('--op',a===0?1:a===1?.55:a===2?.25:0);
+    it.style.setProperty('--sat',a===0?1:.5);
+    it.style.setProperty('--br',a===0?1:.7);
+    it.style.setProperty('--z',10-a);
+    it.classList.toggle('act',a===0);
+    it.setAttribute('aria-hidden',a!==0);
+    const v=it.querySelector('video');v.muted=true;
+    if(vis&&a<=1){if(v.preload==='none')v.preload='auto';v.play().catch(()=>{})}else v.pause();
+  });
+  [...dots.children].forEach((d,i)=>d.classList.toggle('on',i===act));
+};
+const go=i=>{act=(i+N)%N;render();restart()};
+const restart=()=>{clearInterval(timer);if(vis&&!reduce)timer=setInterval(()=>go(act+1),7000)};
+items.forEach((it,i)=>it.addEventListener('click',()=>{if(i!==act)go(i)}));
+document.getElementById('vprev').onclick=()=>go(act-1);
+document.getElementById('vnext').onclick=()=>go(act+1);
+vc.addEventListener('mouseenter',()=>clearInterval(timer));vc.addEventListener('mouseleave',restart);
+let sx=null;
+vc.addEventListener('pointerdown',e=>{sx=e.clientX});
+vc.addEventListener('pointerup',e=>{if(sx===null)return;const dx=e.clientX-sx;if(Math.abs(dx)>40)go(act+(dx<0?1:-1));sx=null});
+new IntersectionObserver(es=>{vis=es[0].isIntersecting;render();restart()},{threshold:.2}).observe(vc);
+render();
+})();
+</script>
+</body>
+</html>
