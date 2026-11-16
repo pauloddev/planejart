@@ -330,12 +330,10 @@ footer .copy{margin-top:40px;padding-top:24px;border-top:1px solid var(--line-d)
 .intro .sy{left:0;top:0;width:25.849%;opacity:0;transform:translateX(143.43%) scale(.8);animation:syIn .9s var(--ease) .2s forwards,syMove 1.05s cubic-bezier(.65,0,.25,1) 1.3s forwards}
 .intro .nm{left:29.948%;top:15.407%;width:70.052%;opacity:0;clip-path:inset(0 100% 0 0);animation:nmIn 1.15s cubic-bezier(.65,0,.25,1) 1.95s forwards}
 .intro .tg{left:29.948%;top:66.476%;width:29.468%;opacity:0;transform:translateY(40%);animation:tgIn .9s var(--ease) 2.85s forwards}
-.intro .line{position:absolute;left:29.948%;right:0;bottom:-22%;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:0 50%;animation:lnIn 1.1s var(--ease) 2.9s forwards;opacity:.6}
 @keyframes syIn{to{opacity:1;transform:translateX(143.43%) scale(1)}}
 @keyframes syMove{from{opacity:1;transform:translateX(143.43%) scale(1)}to{opacity:1;transform:translateX(0) scale(1)}}
 @keyframes nmIn{0%{opacity:1;clip-path:inset(0 100% 0 0)}100%{opacity:1;clip-path:inset(0 0 0 0)}}
 @keyframes tgIn{to{opacity:1;transform:none}}
-@keyframes lnIn{to{transform:scaleX(1)}}
 @keyframes fadeIn{to{opacity:1}}
 html.intro-on,html.intro-on body{overflow:hidden}
 .intro .skip-i{position:absolute;bottom:calc(28px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--t-light-2);opacity:0;animation:fadeIn .6s ease 1.2s forwards;padding:10px 14px}
@@ -385,8 +383,7 @@ html.intro-on,html.intro-on body{overflow:hidden}
   .rv,.split .w>span{opacity:1;transform:none}
   .img-rv{clip-path:none}.img-rv img,.img-rv video{transform:none}
   .intro .sy,.intro .nm,.intro .tg{opacity:1;transform:none;clip-path:none}
-  .intro .line{transform:none}
-  html{scroll-behavior:auto}
+    html{scroll-behavior:auto}
 }
 </style>
 </head>
@@ -402,7 +399,6 @@ html.intro-on,html.intro-on body{overflow:hidden}
     <img class="sy" src="assets/intro-simbolo.png" alt="" width="700" height="701">
     <img class="nm" src="assets/intro-nome.png" alt="" width="1897" height="439">
     <img class="tg" src="assets/intro-tag.png" alt="" width="798" height="87">
-    <i class="line"></i>
   </div>
   <button class="skip-i" type="button">Pular</button>
 </div>
