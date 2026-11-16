@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Planejart Móveis Planejados | Palmares - PE</title>
 <meta name="description" content="Móveis planejados residenciais e comerciais em Palmares - PE. Fábrica própria, mais de 20 anos no mercado, cozinhas, closets, escritórios, lojas completas, balcões e expositores. 5 estrelas no Google.">
-<meta name="theme-color" content="#0a0a0a">
+<meta name="theme-color" content="#030303">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/favicon.png">
 <meta property="og:title" content="Planejart Móveis Planejados | Palmares - PE">
@@ -29,10 +29,10 @@
 </script>
 <style>
 :root{
-  --ink:#050505;
-  --dark:#0a0a0a;
-  --dark-2:#141414;
-  --dark-3:#1c1c1c;
+  --ink:#000000;
+  --dark:#030303;
+  --dark-2:#0b0b0b;
+  --dark-3:#111111;
   --line-d:rgba(255,255,255,.09);
   --gold:#c8a45a;          /* dourado do logo */
   --gold-2:#e3cb94;
@@ -66,7 +66,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 /* ===== header ===== */
 .hdr{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .4s var(--ease),box-shadow .4s,padding .4s;padding:22px 0}
-.hdr.solid{background:rgba(10,10,10,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line-d);padding:12px 0}
+.hdr.solid{background:rgba(3,3,3,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line-d);padding:12px 0}
 .hdr .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px}
 .hdr .logo img{height:40px;width:auto}
 .nav{display:flex;gap:30px}
@@ -218,11 +218,11 @@ h2 em,h1 em{font-style:italic;color:var(--gold)}
 .port button:hover::after,.port button:focus-visible::after{opacity:1}
 .center-act{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:clamp(40px,5vw,56px)}
 
-.lbx{position:fixed;inset:0;z-index:150;background:rgba(5,5,5,.95);display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s;padding:20px}
+.lbx{position:fixed;inset:0;z-index:150;background:rgba(0,0,0,.95);display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s;padding:20px}
 .lbx.open{opacity:1;visibility:visible}
 .lbx img{max-height:86svh;max-width:min(92vw,720px);border-radius:14px;transform:scale(.94);transition:transform .5s var(--ease)}
 .lbx.open img{transform:none}
-.lbx .x,.lbx .pv,.lbx .nx{position:absolute;width:52px;height:52px;border-radius:50%;border:1px solid var(--line-d);display:grid;place-items:center;color:var(--t-light);background:rgba(30,30,30,.7);transition:background .3s,color .3s}
+.lbx .x,.lbx .pv,.lbx .nx{position:absolute;width:52px;height:52px;border-radius:50%;border:1px solid var(--line-d);display:grid;place-items:center;color:var(--t-light);background:rgba(20,20,20,.7);transition:background .3s,color .3s}
 .lbx .x:hover,.lbx .pv:hover,.lbx .nx:hover{background:var(--gold);color:var(--t-dark)}
 .lbx .x{top:20px;right:20px}.lbx .pv{left:20px;top:50%;margin-top:-26px}.lbx .nx{right:20px;top:50%;margin-top:-26px}
 .lbx svg{width:22px;height:22px}
